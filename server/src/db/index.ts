@@ -437,9 +437,8 @@ async function initDatabase() {
     const sampleGames = [
       {
         name: "Valorant",
-        description:
-          "5v5 tactical shooter. Strategize with your team and dominate the battlefield.",
-        icon: "🎯",
+        description: "5v5 tactical shooter. Strategize with your team and dominate the battlefield.",
+        icon: "https://cdn.simpleicons.org/valorant/fa4454",
         player_count: 156,
         color: "#f84565",
         category: "fps",
@@ -447,9 +446,8 @@ async function initDatabase() {
       },
       {
         name: "Minecraft",
-        description:
-          "Build, explore, and survive together. The ultimate sandbox experience.",
-        icon: "⛏️",
+        description: "Build, explore, and survive together. The ultimate sandbox experience.",
+        icon: "https://cdn.simpleicons.org/minecraft/5b8731",
         player_count: 203,
         color: "#5b8731",
         category: "sandbox",
@@ -457,9 +455,8 @@ async function initDatabase() {
       },
       {
         name: "Free Fire",
-        description:
-          "Fast-paced battle royale. Be the last one standing in intense 50-player matches.",
-        icon: "🔥",
+        description: "Fast-paced battle royale. Be the last one standing in intense 50-player matches.",
+        icon: "https://cdn.simpleicons.org/freefire/ff6b00",
         player_count: 189,
         color: "#ff6b00",
         category: "battle-royale",
@@ -467,9 +464,8 @@ async function initDatabase() {
       },
       {
         name: "GTA RP",
-        description:
-          "Live your second life in Los Santos. Roleplay, business, and adventure await.",
-        icon: "🚗",
+        description: "Live your second life in Los Santos. Roleplay, business, and adventure await.",
+        icon: "https://cdn.simpleicons.org/gtarp/8b5cf6",
         player_count: 134,
         color: "#8b5cf6",
         category: "rpg",
@@ -477,9 +473,8 @@ async function initDatabase() {
       },
       {
         name: "Among Us",
-        description:
-          "Find the imposter among your crew. Deception and deduction at its finest.",
-        icon: "🚀",
+        description: "Find the imposter among your crew. Deception and deduction at its finest.",
+        icon: "https://cdn.simpleicons.org/amongus/ef4444",
         player_count: 98,
         color: "#ef4444",
         category: "party",
@@ -487,9 +482,8 @@ async function initDatabase() {
       },
       {
         name: "PES / eFootball",
-        description:
-          "Compete in the world's most realistic football simulation.",
-        icon: "⚽",
+        description: "Compete in the world's most realistic football simulation.",
+        icon: "https://cdn.simpleicons.org/proevolutionsoccer/3b82f6",
         player_count: 76,
         color: "#3b82f6",
         category: "sports",
@@ -498,7 +492,7 @@ async function initDatabase() {
       {
         name: "Fortnite",
         description: "Build, battle, and dance your way to Victory Royale.",
-        icon: "🏗️",
+        icon: "https://cdn.simpleicons.org/fortnite/a855f7",
         player_count: 145,
         color: "#a855f7",
         category: "battle-royale",
@@ -506,9 +500,8 @@ async function initDatabase() {
       },
       {
         name: "League of Legends",
-        description:
-          "Master the Rift. Team strategy and skill in the world's biggest MOBA.",
-        icon: "⚔️",
+        description: "Master the Rift. Team strategy and skill in the world's biggest MOBA.",
+        icon: "https://cdn.simpleicons.org/leagueoflegends/06b6d4",
         player_count: 112,
         color: "#06b6d4",
         category: "moba",
@@ -516,9 +509,8 @@ async function initDatabase() {
       },
       {
         name: "Apex Legends",
-        description:
-          "Squad-based battle royale with unique legends and abilities.",
-        icon: "🦅",
+        description: "Squad-based battle royale with unique legends and abilities.",
+        icon: "https://cdn.simpleicons.org/apexlegends/dc2626",
         player_count: 67,
         color: "#dc2626",
         category: "battle-royale",
@@ -527,7 +519,7 @@ async function initDatabase() {
       {
         name: "Call of Duty",
         description: "Iconic FPS action. Dominate in multiplayer and warzone.",
-        icon: "🎖️",
+        icon: "https://cdn.simpleicons.org/callofduty/16a34a",
         player_count: 89,
         color: "#16a34a",
         category: "fps",
