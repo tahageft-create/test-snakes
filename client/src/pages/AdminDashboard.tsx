@@ -36,6 +36,7 @@ import {
   HiRefresh,
 } from "react-icons/hi";
 import { FaTrophy, FaGamepad } from "react-icons/fa";
+import { GameIcon } from "../components/GameIcon";
 import { useAuth } from "../contexts/AuthContext";
 import { useLanguage } from "../contexts/LanguageContext";
 type Tab =
@@ -1871,7 +1872,7 @@ export default function AdminDashboard() {
                     />
                     <input
                       type="text"
-                      placeholder="Icon"
+                      placeholder="Emoji or Image URL"
                       value={gameForm.icon}
                       onChange={(e2) =>
                         setGameForm({ ...gameForm, icon: e2.target.value })
@@ -1967,12 +1968,12 @@ export default function AdminDashboard() {
                   className="glass-card p-4 flex items-center gap-3"
                 >
                   <div
-                    className="w-10 h-10 rounded-lg flex items-center justify-center text-xl shrink-0"
+                    className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 overflow-hidden"
                     style={{
                       backgroundColor: `${game.color}20`,
                     }}
                   >
-                    {game.icon}
+                    <GameIcon icon={game.icon} color={game.color} size="text-xl" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">

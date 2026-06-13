@@ -8,8 +8,9 @@ import type { TranslationKey } from "../lib/translations";
 import api from "../lib/api";
 import type { ServerStats, Event, Game, TeamMember, FAQ } from "../lib/types";
 import { HiUsers, HiStatusOnline, HiMicrophone, HiBadgeCheck } from "react-icons/hi";
-import { FaDiscord, FaTrophy } from "react-icons/fa";
-import { MdEvent, MdQuestionAnswer } from "react-icons/md";
+import { FaDiscord } from "react-icons/fa";
+import { MdEvent } from "react-icons/md";
+import { GameIcon } from "../components/GameIcon";
 
 const SNAKES_LOGO = "https://images-ext-1.discordapp.net/external/qmYy-6LU-SDQrqF0V62hqyKCGd86cACC-IS_Lu0M2NU/%3Fsize%3D1024/https/cdn.discordapp.com/icons/1400333179126157342/a_8d32d26812a7ecd9464b3ed4c86255e5.gif?width=1692&height=1692";
 const SNAKES_BANNER = "https://images-ext-1.discordapp.net/external/KIIqZ7Nl9yebpj8m345MQ4IL86gYWY8QpTRGIGsMxDs/%3Fsize%3D512/https/cdn.discordapp.com/banners/1400333179126157342/a_ce29f69bedc010609208c908cee32888.gif?width=1200&height=675";
@@ -171,8 +172,8 @@ export default function Home() {
                   transition={{ delay: i * 0.08 }} whileHover={{ y: -6 }}
                   className="glass-card p-5 text-center group"
                 >
-                  <div className="w-14 h-14 rounded-xl flex items-center justify-center text-3xl mx-auto mb-3 group-hover:scale-110 transition-transform" style={{ backgroundColor: `${game.color}20` }}>
-                    {game.icon}
+                  <div className="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform overflow-hidden" style={{ backgroundColor: `${game.color}20` }}>
+                    <GameIcon icon={game.icon} color={game.color} size="text-3xl" />
                   </div>
                   <h3 className="font-bold text-sm mb-1" style={{ color: game.color }}>{game.name}</h3>
                   <p className="text-dark-500 text-xs mb-3">{game.player_count} {t("home.players")}</p>

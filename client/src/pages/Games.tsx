@@ -6,6 +6,7 @@ import api from '../lib/api';
 import type { Game } from '../lib/types';
 import { FaDiscord } from 'react-icons/fa';
 import { HiUsers } from 'react-icons/hi';
+import { GameIcon } from '../components/GameIcon';
 export default function Games() {
   const { t } = useLanguage();
   const [games, setGames] = useState<Game[]>([]);
@@ -131,7 +132,7 @@ export default function Games() {
                         }}
                       >
                         {' '}
-                        {game.icon}{' '}
+                        <GameIcon icon={game.icon} color={game.color} size="text-3xl" />{' '}
                       </div>{' '}
                       <div>
                         {' '}
@@ -224,7 +225,7 @@ export default function Games() {
                       }}
                     >
                       {' '}
-                      {game.icon}{' '}
+                      <GameIcon icon={game.icon} color={game.color} size="text-xl" />{' '}
                     </div>{' '}
                     <div className="flex-1 min-w-0">
                       {' '}
