@@ -67,38 +67,20 @@ export default function Navbar() {
     );
   };
   const navLinks = [
-    {
-      path: "/",
-      label: t("nav.home"),
-    },
-    {
-      path: "/games",
-      label: t("nav.games"),
-    },
-    {
-      path: "/events",
-      label: t("nav.events"),
-    },
-    {
-      path: "/tournaments",
-      label: t("nav.tournaments"),
-    },
-    {
-      path: "/ranks",
-      label: t("nav.ranks"),
-    },
-    {
-      path: "/giveaways",
-      label: t("nav.giveaways"),
-    },
-    {
-      path: "/team",
-      label: t("nav.team"),
-    },
-    {
-      path: "/faq",
-      label: t("nav.faq"),
-    },
+    { path: "/", label: t("nav.home") },
+    { path: "/games", label: t("nav.games") },
+    { path: "/events", label: t("nav.events") },
+    { path: "/tournaments", label: t("nav.tournaments") },
+    { path: "/ranks", label: t("nav.ranks") },
+    { path: "/giveaways", label: t("nav.giveaways") },
+    { path: "/roulette", label: t("nav.roulette") },
+    { path: "/team", label: t("nav.team") },
+    { path: "/faq", label: t("nav.faq") },
+  ];
+  const extraLinks = [
+    { path: "/premium", label: t("nav.premium") },
+    { path: "/shop", label: t("nav.shop") },
+    { path: "/clans", label: t("nav.clans") },
   ];
   const adminRoles = ["owner", "developer", "admin"];
   useEffect(() => {
@@ -144,13 +126,13 @@ export default function Navbar() {
             </span>
           </Link>{" "}
           {/* Desktop nav */}{" "}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-1 overflow-x-auto scrollbar-none">
             {" "}
-            {navLinks.map((link) => (
+            {[...navLinks, ...extraLinks].map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 whitespace-nowrap ${
                   location.pathname === link.path
                     ? "text-gold-400"
                     : "text-dark-300 hover:text-white hover:bg-dark-800/50"
@@ -344,7 +326,7 @@ export default function Navbar() {
           >
             <div className="px-4 py-4 space-y-2">
               {" "}
-              {navLinks.map((link) => (
+              {[...navLinks, ...extraLinks].map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}

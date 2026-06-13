@@ -55,12 +55,12 @@ export default function Tournaments() {
     upcoming: {
       bg: 'bg-olive-500/20',
       text: 'text-olive-400',
-      label: t('home.upcoming'),
+      label: t('events.upcoming'),
     },
     active: {
       bg: 'bg-gold-500/20',
       text: 'text-gold-400',
-      label: t('home.live'),
+      label: t('events.live'),
     },
     completed: {
       bg: 'bg-dark-700',

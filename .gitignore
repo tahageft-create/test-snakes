@@ -4,3 +4,14 @@ uploads/
 data/
 .env
 *.db
+*.png
+*.gif
+*.svg
+fix-*.js
+final-*.js
+reverse-*.js
+smart-*.js
+check-*.js
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js

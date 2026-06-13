@@ -19,6 +19,10 @@ import StaffApplication from "./pages/StaffApplication";
 import AdminDashboard from "./pages/AdminDashboard";
 import DiscordCallback from "./pages/DiscordCallback";
 import NotFound from "./pages/NotFound";
+import Roulette from "./pages/Roulette";
+import Premium from "./pages/Premium";
+import Shop from "./pages/Shop";
+import Clans from "./pages/Clans";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { useLanguage } from "./contexts/LanguageContext";
 export default function App() {
@@ -50,6 +54,10 @@ export default function App() {
             <Route path="/forgot-password" element={<ForgotPassword />} />{" "}
             <Route path="/reset-password" element={<ResetPassword />} />{" "}
             <Route path="/apply" element={<StaffApplication />} />{" "}
+            <Route path="/roulette" element={<Roulette />} />{" "}
+            <Route path="/premium" element={<Premium />} />{" "}
+            <Route path="/shop" element={<Shop />} />{" "}
+            <Route path="/clans" element={<Clans />} />{" "}
             <Route path="/discord/callback" element={<DiscordCallback />} />{" "}
             <Route path="/admin/login" element={<Login />} />{" "}
             <Route
